@@ -1,37 +1,104 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Harga</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
 
-<html>
-    <head>
-        <title>Perpustakaan</title>
-        <link rel="stylesheet" href="css/styles.css">
-    </head>
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
 
-    <body>
+        h1 {
+            color: #ff69b4;
+            text-align: center;
+        }
 
-        <div class="header">
-            <div class="header-logo">
-                <img src="img/gura-anggap_logo.webp" alt="logo">
-            </div>
-            <div class="header-title">
-                <a href="index.html">Perpustakaan Wibu</a>
-            </div>
-        </div>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
 
-        <ul class="nav">
-            <li class="nav-item"><a href="index.html">Beranda</a></li>
-            <li class="nav-item"><a href="pages/buku.html">Buku</a></li>
-            <li class="nav-item"><a href="pages/kontak.html">Kontak</a></li>
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
 
-        </ul>
+        th {
+            background-color: #ff69b4;
+            color: #fff;
+        }
 
-        <div class="konten">
-            <h1>Beranda</h1>
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+        }
 
-            <h2>Selamat Datang di Perpustakaan Wibu</h2>
+        .footer a {
+            color: #ff69b4;
+            text-decoration: none;
+        }
 
-            <p>Perpustakaan ini diperuntukkan untuk siapa saja yang ingin membaca buku-buku populer seputar manga, novel, dan lain sebagainya</p>
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
 
-        </div>
+<div class="container">
+    <h1>Daftar Harga</h1>
 
-    </body>
+    <h2>Free Fire</h2>
+    <table>
+        <tr>
+            <th>Diamond</th>
+            <th>Harga</th>
+        </tr>
+        <tr>
+            <td>50 dm</td>
+            <td>9.500</td>
+        </tr>
+        <!-- Tambahkan baris-baris tabel sesuai dengan daftar harga -->
+    </table>
+    <p>Diamond akan langsung terkirim ke akun anda ketika status transaksi selesai.</p>
+    <button><a href="#">Lihat di katalog</a></button>
+
+    <h2>PUBG Mobile</h2>
+    <table>
+        <tr>
+            <th>UC</th>
+            <th>Harga</th>
+        </tr>
+        <tr>
+            <td>26 UC</td>
+            <td>8.000</td>
+        </tr>
+        <!-- Tambahkan baris-baris tabel sesuai dengan daftar harga -->
+    </table>
+    <p>UC akan langsung terkirim ke akun anda ketika status transaksi selesai.</p>
+    <button><a href="#">Lihat di katalog</a></button>
+</div>
+
+<div class="footer">
+    <a href="https://contoh.com">Kembali ke katalog</a>
+</div>
+
+</body>
 </html>
+
