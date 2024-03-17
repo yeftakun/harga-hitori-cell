@@ -5,6 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daftar Harga</title>
     <style>
+    
+        .header {
+            background-image: url('bgheader.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        
+        .header::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 105, 180, 0.2); /* Warna dengan opasitas 20% */
+            border-radius: 5px;
+        }
+
         body {
             font-family: Arial, sans-serif;
             background-color: #f5f5f5;
@@ -62,7 +84,9 @@
 <body>
 
 <div class="container">
+    <div class="header">
     <h1>Daftar Harga</h1>
+    </div>
 
     <h3>Free Fire</h3>
     <table>
