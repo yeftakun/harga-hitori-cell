@@ -1,119 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daftar Harga</title>
-    <style>
-    
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Daftar Harga</title>
+        <style>
+                body {
+                        font-family: Arial, sans-serif;
+                        background-color: #f5f5f5;
+                        color: #333;
+                        margin: 0;
+                        padding: 0;
+                }
+
+                .container {
+                max-width: 800px;
+                margin: 120px auto 20px; /* Add margin-top property */
+                padding: 20px;
+                background-color: #fff;
+                border-radius: 5px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
         .header {
-            background-image: url('bgheader.jpg');
-            background-size: cover;
-            background-position: center;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            position: relative;
-        }
-        
-        .header::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 10%;
-            background-color: rgba(255, 105, 180, 0); /* Warna dengan opasitas 20% */
-            border-radius: 5px;
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                background-color: #ffffff; /* Replace with your desired color */
+                padding: 10px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                z-index: 999;
         }
 
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
+                h1 {
+                        text-align: center;
+                        margin-bottom: 20px;
+                }
 
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
+                table {
+                        width: 100%;
+                        border-collapse: collapse;
+                        margin-top: 20px;
+                }
 
-        h1 {
-            color: white;
-            text-align: center;
-            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
-        }
+                th, td {
+                        padding: 10px;
+                        text-align: left;
+                        border-bottom: 1px solid #ddd;
+                }
 
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-        }
+                th {
+                        background-color: #ff69b4;
+                        color: #fff;
+                }
 
-        th, td {
-            padding: 10px;
-            text-align: left;
-            border-bottom: 1px solid #ddd;
-        }
+                .footer {
+                        text-align: center;
+                        margin-top: 20px;
+                }
 
-        th {
-            background-color: #ff69b4;
-            color: #fff;
-        }
+                .footer a {
+                        color: #ff69b4;
+                        text-decoration: none;
+                }
 
-        .footer {
-            text-align: center;
-            margin-top: 20px;
-        }
+                .footer a:hover {
+                        text-decoration: underline;
+                }
 
-        .footer a {
-            color: #ff69b4;
-            text-decoration: none;
-        }
+                .content-list {
+                        margin-top: 20px;
+                        justify-content: space-between;
+                        font-size: 18px; /* Increase the font size */
+                }
 
-        .footer a:hover {
-            text-decoration: underline;
-        }
-
-        /* Navigasi horizontal */
-        .nav {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        .nav a {
-            text-decoration: none;
-            color: #333;
-            margin: 0 10px;
-            padding: 5px 10px;
-            border-radius: 5px;
-            background-color: #f0f0f0;
-        }
-
-        .nav a:hover {
-            background-color: #ddd;
-        }
-    </style>
+                .content-list a {
+                        display: inline;
+                        margin-bottom: 20px;
+                        color: #333;
+                        text-decoration: none;
+                }
+                /* .container {
+                    overflow-y: auto;
+                    height: calc(100vh - 40px);
+                } */
+        </style>
 </head>
 <body>
 
 <div class="container">
-    <div class="header">
-    <h1>Daftar Harga</h1>
+        <div class="header">
+                <h1>Daftar Harga</h1>
+                <div class="content-list">
+                        <a href="#diamond">Diamond</a> | <a href="#uc">UC</a> | <a href="#steam-wallet">Steam Wallet</a>
+                </div>
     </div>
     
-    <div class="nav">
-        <a href="#free-fire">Free Fire</a>
-        <a href="#pubg-mobile">PUBG Mobile</a>
-    </div>
-
-    <h3 id="#free-fire">Free Fire</h3>
+    <h3 id="diamond">Diamond</h3>
     <table>
         <tr>
             <th>Diamond</th>
@@ -151,12 +134,11 @@
             <td>720 dm</td>
             <td>104.000</td>
         </tr>
-        <!-- Tambahkan baris-baris tabel sesuai dengan daftar harga -->
     </table>
     <p>Diamond akan langsung terkirim ke akun anda ketika status transaksi selesai.</p>
     <button><a href="https://wa.me/p/25905036199095943/6285775471308">Lihat di katalog</a></button>
 
-    <h3 id="#pubg-mobile">PUBG Mobile</h3>
+    <h3 id="uc">UC</h3>
     <table>
         <tr>
             <th>UC</th>
@@ -186,16 +168,70 @@
             <td>660 UC</td>
             <td>128.000</td>
         </tr>
-        <!-- Tambahkan baris-baris tabel sesuai dengan daftar harga -->
     </table>
     <p>UC akan langsung terkirim ke akun anda ketika status transaksi selesai.</p>
     <button><a href="https://wa.me/p/7328389113873893/6285775471308">Lihat di katalog</a></button>
+    <h3 id="steam-wallet">Steam Wallet IDR</h3>
+    <table>
+        <tr>
+            <th>Steam Wallet</th>
+            <th>Harga</th>
+        </tr>
+        <tr>
+            <td>6K</td>
+            <td>7.500</td>
+        </tr>
+        <tr>
+            <td>8K</td>
+            <td>9.500</td>
+        </tr>
+        <tr>
+            <td>12K</td>
+            <td>13.500</td>
+        </tr>
+        <tr>
+            <td>45K</td>
+            <td>48.000</td>
+        </tr>
+        <tr>
+            <td>60K</td>
+            <td>63.500</td>
+        </tr>
+        <tr>
+            <td>90K</td>
+            <td>94.000</td>
+        </tr>
+        <tr>
+            <td>120K</td>
+            <td>126.000</td>
+        </tr>
+    </table>
+    <p>Kode voucher akan dikirimkan setelah transaksi selesai.</p>
 </div>
 
 <div class="footer">
     <a href="https://wa.me/c/6285775471308">Lihat Daftar Katalog</a>
 </div>
 
-</body>
-</html>
+<script>
+    // Add event listener to each content link
+    var contentLinks = document.querySelectorAll('.content-list a');
+    contentLinks.forEach(function(link) {
+        link.addEventListener('click', function(event) {
+            event.preventDefault();
+            var targetId = link.getAttribute('href').substring(1);
+            var targetElement = document.getElementById(targetId);
+            if (targetElement) {
+                var offset = targetElement.offsetTop - 140;
+                window.scrollTo({
+                    top: offset,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+</script>
 
+</body>
+
+</html>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
